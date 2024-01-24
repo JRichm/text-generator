@@ -31,10 +31,11 @@ export default function Home() {
   }
 
   return (
-    <main className="flex justify-center">
-      <div className="bg-gray-100 flex flex-col p-3 w-[400px]">
+    <main className="flex bg-slate-900 justify-center min-h-screen">
+      <div className="flex flex-col p-3 w-[800px]">
         <InputForm />
-        <div className="bg-slate-800 mt-4 p-4 rounded text-slate-300 text-xs flex flex-row gap-3.5 flex-wrap whitespace-pre">
+        <label className='text-white'>Available Characters:</label>
+        <div className="bg-slate-800 p-4 rounded text-slate-300 text-xs flex flex-row gap-3.5 flex-wrap whitespace-pre">
           {itemElements}
         </div>
       </div>
